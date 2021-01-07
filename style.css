@@ -1,0 +1,77 @@
+body {
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+}
+
+.container {
+    padding: 0 10em 5em;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #98969A;
+}
+
+.navbar li a{
+    display: block;
+}
+
+.navlogo {
+    padding-top: 1em;
+}
+
+.navitem {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media all and (min-width: 376px) {
+    .navbar {
+        align-items: flex-start;
+        /* justify-content: center; */
+        flex-wrap: nowrap;
+    }
+
+    .navlogo {
+        flex: 1;
+        order: 0;
+    }
+
+    .navitem {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+
+    .navbutton {
+        order: 2;
+        border: 1px solid black;
+        background-color: white;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
