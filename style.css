@@ -1,10 +1,11 @@
 body {
     font-size: 16px;
     font-family: "Karla", sans-serif;
+    font-weight: 400;
 }
 
 .container {
-    padding: 0 10em 5em;
+    display: grid;
 }
 
 .navbar {
@@ -18,6 +19,7 @@ body {
 
 a {
     text-decoration: none;
+    font-weight: 700;
     color: #98969A;
 }
 
@@ -30,6 +32,7 @@ a {
 }
 
 .navitem {
+    border-top: 2px solid transparent;
     text-transform: uppercase;
     text-align: center;
     width: 100%;
@@ -47,6 +50,10 @@ a {
   }
 
 @media all and (min-width: 376px) {
+    .container {
+        padding: 0 10em 5em;
+    }
+
     .navbar {
         align-items: flex-start;
         /* justify-content: center; */
@@ -65,13 +72,50 @@ a {
         width: auto;
     }
 
+    .navitem:hover a {
+        color: #2A292E;
+    }
+
     .navbutton {
         order: 2;
-        border: 1px solid black;
+        border: 1px solid #2A292E;
+        margin-left: 1em;
+        padding: 0.5em 1.5em;
         background-color: white;
+    }
+
+    .navbutton:hover {
+        background-color: #2A292E;
+        cursor: pointer;
+    }
+
+    .navbutton:hover a {
+        color: white;
+    }
+
+    .navbutton a{
+        color: #2A292E;
     }
 
     .toggle {
         display: none;
+    }
+
+    .intro-area {
+        display: flex;
+        background-color: #2C2640;
+        color: white;
+        height: 37em;
+        padding-left: 11em;
+        padding-right: 11em;
+        margin-left: -11em;
+        margin-right: -11em;
+    }
+
+    .intro-area h1 {
+        font-family: 'DM Serif Display', serif;
+        font-weight: 400;
+        font-size: 70px;
+        margin: 0;
     }
 }
